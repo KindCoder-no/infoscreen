@@ -7,15 +7,16 @@ function weatherData(){
             // Define data to update
             var temperature = result.temperature
             var wind = result.wind
-            var weather = result.weather
+            if(result.weather === undefined){
+                var weather_result = ""
+            }else{
+                var weather_result = result.weather
+            }
             
             weather = `
-            ${temperature}°
-            <br>
-            ${weather}
-            <br>
-            ${wind}m/s 
-            `
+            <p>${temperature}°</p>
+            <p>${weather_result}</p>
+            <p>${wind}m/s</p>`
 
 
             $('#weather').html(weather);

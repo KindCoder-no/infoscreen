@@ -46,9 +46,9 @@ function bussTavla(){
                 string += 
                 `<div class="row" style="margin-bottom: 1%; font-size: 150%;">
                     <div class="col">
-                    ${element.destinationDisplay.frontText}
+                    <i class="fas fa-bus"></i> ${element.destinationDisplay.frontText}
                     </div>
-                    <div class="col-8">
+                    <div class="col-5">
                     ${depTime}
                     </div>
                 </div>`
