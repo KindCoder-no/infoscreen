@@ -16,3 +16,7 @@ This project gets data from Charlottenlund VGS, but you chan change this in the 
 - Better Connection to Database
 - Admin Page
 - 1 Line setup command with config
+
+
+### Plans for this project
+Easy to use InfoScreen to display relevant information
