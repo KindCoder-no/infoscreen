@@ -33,3 +33,5 @@ Easy to use InfoScreen to display relevant information
 
 # Demo
 http://infoscreen.esanden.no:8080/
+
+Web Scraping does not work in this demo
