@@ -22,3 +22,8 @@ This project gets data from Charlottenlund VGS, but you chan change this in the 
 
 ### Plans for this project
 Easy to use InfoScreen to display relevant information
+
+### Features
+- Get live buss departures from Entur/Buss Stop
+- Get live weather forecast from YR.no
+- Send Live "Important" messages in scrollable format
