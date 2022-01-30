@@ -27,6 +27,8 @@ Easy to use InfoScreen to display relevant information
 - Get live buss departures from Entur/Buss Stop
 - Get live weather forecast from YR.no
 - Send Live "Important" messages in scrollable format
+- Display Clock
+- Countdown to date/vacation
 
 # Demo
 http://infoscreen.esanden.no:8080/
