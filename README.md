@@ -32,5 +32,9 @@ Easy to use InfoScreen to display relevant information
 - Display Clock
 - Countdown to date/vacation
 
+## Images
+<img width="1280" alt="Skjermbilde 2022-02-06 kl  23 44 02" src="https://user-images.githubusercontent.com/40148297/152704673-14870e68-f5b9-455b-848e-93b7c8030a99.png">
+
+
 # Demo
 https://im-infoscreen.herokuapp.com/new
