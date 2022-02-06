@@ -19,6 +19,8 @@ This project gets data from Charlottenlund VGS, but you chan change this in the 
 - Better Connection to Database
 - Admin Page
 - Screen Editor
+- Database Setup Script
+- Language Translation
 - 1 Line setup command with config
 
 
@@ -31,6 +33,7 @@ Easy to use InfoScreen to display relevant information
 - Send Live "Important" messages in scrollable format
 - Display Clock
 - Countdown to date/vacation
+- Day schedule
 
 ## Images
 <img width="1280" alt="Skjermbilde 2022-02-06 kl  23 44 02" src="https://user-images.githubusercontent.com/40148297/152704673-14870e68-f5b9-455b-848e-93b7c8030a99.png">
