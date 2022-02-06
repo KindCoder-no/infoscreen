@@ -29,9 +29,6 @@ Easy to use InfoScreen to display relevant information
 - Send Live "Important" messages in scrollable format
 - Display Clock
 - Countdown to date/vacation
-- Web Scraping
 
 # Demo
-http://infoscreen.esanden.no:8080/
-
-**Web Scraping does not work in this demo**
+https://im-infoscreen.herokuapp.com/
