@@ -1,4 +1,5 @@
 # InfoScreen
+(Source Code comming soon)
 This is an easy info TV-Screen page made in Node.JS and Express
 
 **NB: This project is far from done!**
@@ -31,4 +32,4 @@ Easy to use InfoScreen to display relevant information
 - Countdown to date/vacation
 
 # Demo
-https://im-infoscreen.herokuapp.com/
+https://im-infoscreen.herokuapp.com/new
