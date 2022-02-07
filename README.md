@@ -1,5 +1,5 @@
 # InfoScreen
-*(Source Code comming soon)*
+*(Source Code coming soon)*
 
 This is an easy info TV-Screen page made in Node.JS and Express
 
