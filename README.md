@@ -40,4 +40,4 @@ Easy to use InfoScreen to display relevant information
 
 
 # Demo
-https://im-infoscreen.herokuapp.com/new
+https://im-infoscreen.herokuapp.com
