@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IM Tavla</title>
+      <link rel="stylesheet" href="/css/main.css">
+      <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/emojis/880802613212377129.webp?size=240&quality=lossless">
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+  <body style="background-color: #244E5A;">
+    <div class="mt-5"></div>
+    <br>
+    <div class="mt-5"></div>
+
+    <div class="container-fluid">
+        <div class="row align-items-center">
+
+            <!-- Buss Box -->
+            <div class="col-3 mx-auto bordered-box-full">
+                <h2 style="text-align: center; color:white; font-size: 300%;">Buss</h2>
+                <div class="mt-5"></div>
+                <div id="busstavla" class="container busstavla" align="center">
+
+                    <img src="/gifs/spinner.gif" alt="">
+                </div>
+            </div>
+            
+            <!-- Clock Box -->
+            <div class="col-3 mx-auto bordered-box-full">
+                <div class="mt-3"></div>
+                <div id="infobox" class="infobox" align="center">
+                    <img src="https://cdn.discordapp.com/emojis/880802613212377129.webp?size=240&quality=lossless" alt="" height="400">
+                </div>
+                <div class="row align-items-center">
+                    <h2 id="clock" style="position: absolute; bottom: 5rem; color: white; font-size: 350%; text-align: center;">20:00:00</h2>
+
+                    <h3 id="date" style="position: absolute; bottom: 2rem; color: white; font-size: 300%; text-align: center;">1 Februar 2022</h3>
+
+                </div>
+                
+            </div>
+    
+            <div class="col-3 mx-auto">
+
+                <!-- Været -->
+                <div class="bordered-box-small">
+                    <div class="row">
+                        <div class="col-4">
+                            <img style="height: 80%;" id="weathericon" class="img-fluid" src="/gifs/spinner.gif" alt="" >
+                        </div>
+                        <div class="col-8">
+                            <div id="weather" class="align-middle">
+                                <br>
+                                <h3 class="text-white" style="width: 30%;">2°</h3>
+                                <h3 class="text-white align-middle" style="width: 30%;">sludd</h3>
+                                <h3 class="text-white align-middle" style="width: 30%;">6m/s</h3>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5"></div>
+                
+                <!-- Spotify Item -->
+                <div class="bordered-box-small">
+                    <div class="row">
+                        <div class="mt-3"></div>
+
+                        <div class="col-4 mx-auto" align="center">
+                            <div class="mt-2"></div>
+                            <img id="song_image" src="/gifs/spinner.gif" alt="" height="125" style="border-radius: 10px;">
+                        </div>
+                        <div class="col-8">
+                            <h3 id="song_name" style="color: white; text-align: left">Navn</h3>
+                            <br>
+                            <div class="row justify-content-center" style="margin-right: 5%;">
+                            
+                                <div class="col-12 ms-auto">
+                                    <div class="row">
+                                        <p id="song_current" style="width: 50%; font-size: 150%; color:white; text-align: left;">0:00</p>
+                                        <p id="song_lenght" style="width: 50%; font-size: 150%; color:white; text-align: right;">0:00</p>
+                                    </div>
+                                
+                                    <div class="progress" style="height: 4px;">
+                                        <div id="song_progress" class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5"></div>
+
+                <!-- Nedtelling -->
+                <div class="bordered-box-small">
+                    
+                    <div id="countdown" style="display: inline;">
+                        <br>
+                        <div class="row justify-content-center ferier">
+                          <div class="col-3">
+                            Vinterferie
+                          </div>
+                          <div id="vinterferie_countdown" class="col-7">
+                            28 dager 10 timer 4 min 10 sek
+                          </div>
+                        </div>
+            
+                        <div class="row justify-content-center ferier">
+                            <div class="col-3">
+                              Påskeferie
+                            </div>
+                            <div id="paaskeferie_countdown" class="col-7">
+                              28 dager 10 timer 43 min 10 sek
+                            </div>
+                        </div>
+            
+                        <div class="row justify-content-center ferier">
+                          <div class="col-3">
+                            Sommerferie
+                          </div>
+                          <div id="sommerferie_countdown" class="col-7">
+                            128 dager 10 timer 4 min 10 sek
+                          </div>
+                        </div>
+            
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="mt-5"></div>
+
+    <!-- Part 2 -->
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Chantina -->
+            <div class="col-3 mx-auto bordered-box-medium">
+                <table class="table text-white">
+                    <thead>
+                        <h2 class="text-white text-center" style="font-size: 300%;">Chantina.no</h2>
+                        <h3 id="dagensmat" class="text-white text-center" style="font-size: 250%;">Dagens: </h3>
+                    </thead>
+                    <tbody id="matkalender" style="font-size: 200%;">
+
+                        <tr>
+                            <th scope="row">Mandag</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Tirsdag</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Onsdag</th>
+                            <td>Lunsj</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row">Torsdag</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Fredag</th>
+                            <td>Fag</td> 
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+
+            <!-- 1IM1 Kalender -->
+            <div class="col-3 mx-auto bordered-box-medium">
+                <div class="mt-4"></div>
+                <marquee id="image_gallery" behavior="scroll" truespeed="70" direction="left" style="max-height: 100%;">
+                    <!--<div style="display: inline-block;">
+                        <img src="https://tronder-my.sharepoint.com/:i:/r/personal/elev334900_elev_trondelagfylke_no/Documents/Foto/Bildertiltavla/20200807-IMG_6547-Edit-2-Edit.jpg?csf=1&web=1&e=rIwkP1" height="400">
+                        <p style="text-align: center; color: white; font-size: 150%;">Foto: Monke</p>
+                    </div>-->
+                    
+                </marquee>
+
+                <!--<table class="table text-white">
+                    <thead>
+                        <h2 class="text-white text-center" style="font-size: 300%;">Timeplan</h2>
+                        <h3 class="text-white text-center" style="font-size: 250%;">IM1</h3>
+                    </thead>
+                    <tbody style="font-size: 200%;">
+
+                        <tr>
+                            <th scope="row">(08.15 - 09.50)</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">(10.00 - 11.35)</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">(11.35 - 12.20)</th>
+                            <td>Lunsj</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row">(12.20 - 13.55)</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">(14.04 - 15.40)</th>
+                            <td>Fag</td> 
+                        </tr>
+                    </tbody>
+                  </table>-->
+            </div>
+
+            <!-- 1Im2 Kalender -->
+            <div class="col-3 mx-auto bordered-box-medium">
+                <table class="table text-white">
+                    <thead>
+                        <h2 class="text-white text-center" style="font-size: 300%;">Timeplan</h2>
+                        <h3 class="text-white text-center" style="font-size: 250%;">IM2</h3>
+                    </thead>
+                    <tbody style="font-size: 200%;">
+                        <tr>
+                            <th scope="row">(08.15 - 09.50)</th>
+                            <td>Fag</td> 
+                        </tr>
+
+                        <tr>
+                            <th scope="row">(10.00 - 11.35)</th>
+                            <td>Fag</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row">(11.35 - 12.20)</th>
+                            <td>Lunsj</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row">(12.20 - 13.55)</th>
+                            <td>Fag</td> 
+                        </tr>
+                        <tr>
+                            <th scope="row">(14.04 - 15.40)</th>
+                            <td>Fag</td> 
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid fixed-bottom" style="margin-top: 5%; background-color: #316574; width: 100%">
+        <div class="row justify-content-center">
+            <div class="col">
+                <!--<div id="promo-notifications">
+                    <ul id="news">  
+                    <li>Message</li>
+                    
+
+                  </ul>
+                </div>-->
+                <marquee id="news" style="color: white; font-size: 250%; " class = "marquee" behavior="scroll" direction="left"></marquee>
+
+                <div style="text-align: center; margin-bottom: 10px;">
+                    <a href="https://github.com/KindCoder-no/infoscreen/" target="_blank" style="color: white; font-size: 200%;"><i class="fab fa-github"></i> Kindcoder-no/infoscreen</a>
+
+                </div>
+                    <!--<marquee id="news" style="color: white; font-size: 250%; " class = "marquee" behavior="scroll" direction="left">
+                        VIKTIG MELDING: Roar e kul :D 
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        VIKTIG MELDING: Andreas gir damage
+                    </marquee>-->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+
+    <!-- Include Own Scripts -->
+    <script src="/scripts/clock-date.js"></script>
+    <script src="/scripts/buss.js"></script>
+    <script src="/scripts/weather.js"></script>
+    <script src="/scripts/chantina.js"></script>
+    <script src="/scripts/countdown.js"></script>
+    <script src="/scripts/news.js"></script>
+    <script src="/scripts/spotify.js"></script>
+    <script src="/scripts/info.js"></script>
+    <script src="/scripts/image-gallery.js"></script>
+
+    <!-- Active script functions -->
+    <script>
+        // Set Page Zoom
+        document.body.style.zoom = "67%";
+   
+        clock_date()
+        buss()
+        weather()
+        chantina()
+        countdown()
+        news()
+        spotify()
+        info()
+        image_gallery()
+        
+        var spotify_access_token = "<%= access_token %>"
+        console.log(spotify_access_token)
+        if(spotify_access_token != ""){
+            console.log("Access token defined")
+            spotifyplayer("<%= access_token %>", "<%= tavle_name %>")
+        }
+    </script>
+    
+  </body>
+</html>
