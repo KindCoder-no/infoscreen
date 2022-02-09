@@ -9,6 +9,8 @@ To install this project all you have to do is download the GitHub repository and
 
 Start the project with ``` node server.js ```
 
+If you don't have a Database (MongoDB), get the setup here: https://github.com/KindCoder-no/infoscreen-database-setup
+
 *I recommend using [pm2](https://pm2.keymetrics.io/) to manage the server, but it is optional*
 ## Config
 This project gets data from Charlottenlund VGS, but you can change this in the ```.env``` file
