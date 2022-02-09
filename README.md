@@ -35,7 +35,7 @@ Easy to use InfoScreen to display relevant information
 - Auth0 Login
 
 ## Images
-<img width="1280" alt="Skjermbilde 2022-02-06 kl  23 44 02" src="https://user-images.githubusercontent.com/40148297/152704673-14870e68-f5b9-455b-848e-93b7c8030a99.png">
+![image](https://user-images.githubusercontent.com/40148297/153213480-c6284d0b-5687-46a2-8d68-22cf078364c2.png)
 
 
 # Demo
