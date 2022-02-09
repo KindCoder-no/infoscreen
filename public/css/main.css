@@ -1,0 +1,144 @@
+.body h1 {
+    font-size: small;
+}
+
+#mainmodal {
+    position: fixed;
+    font-family: Arial;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.modalconent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFD700;
+    width: 100%;
+    padding: 50px;
+}
+
+.breakingtitle {
+	font-size: 50px;
+	background: black;
+	color: #FFD700;
+	padding: 10px;
+}
+
+#readmorebutton {
+	background: black;
+	color: #FFD700;
+	border-style: none;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.marquee {
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 700;
+	padding: 30px;
+	font-size: 40px;
+}
+
+.bussitem {
+    font-size: 200%;
+    color: white;
+    border-radius: 10px;
+    background-color: #244e5a;
+}
+
+.bussitem-marked {
+    font-size: 200%; 
+    background-color: yellow;
+    border-radius: 10px;
+}
+.bussitem-marked-red {
+    font-size: 200%; 
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+.bordered-box-full {
+    border-radius: 30px; 
+    background-color: #316574;
+    height: 40rem;
+    position: relative; 
+}
+
+.bordered-box-medium {
+    border-radius: 30px; 
+    background-color: #316574;
+    height: 30rem;
+    position: relative; 
+}
+
+.bordered-box-small {
+    border-radius: 30px; 
+    background-color: #316574;
+    height: 11rem;
+    margin: auto;
+}
+
+.infobox {
+    height: 29rem;
+    width: 100%;
+}
+
+.ferier {
+    color: white;
+    margin-bottom: 1%; 
+    font-size: 150%;
+}
+
+.text-white {
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#promo-notifications{
+    /*background: #F4A8BE;*/
+    font-size: 30px;
+    padding: 30px;
+    width: 100%;
+    font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+
+#promo-notifications ul{
+	width: 100%;
+	height: 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+#promo-notifications li{
+	width: 980px;
+	line-height: 35px;
+    height: 35px;
+	position: absolute;
+	top: 0;
+	left: 100%;
+    color: white;
+	text-align: center;
+	list-style: none;
+}
